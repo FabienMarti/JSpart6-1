@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8" />
+        <title>Part 6 Ex 1</title>
+    </head>
+
+    <body>
+        <script>
+            for (let i = 2020; i <= 2030; i++) {
+                if (((i % 4 == 0) && (i % 100 != 0)) || (i % 400 == 0)) {
+                    var p = document.createElement("p");
+                    p.innerHTML = i;
+                    p.style.color = "red";
+                    document.body.appendChild(p);
+                } else {
+                    var p = document.createElement("P");
+                    p.innerHTML = i;
+                    document.body.appendChild(p);
+                }
+            }
+        </script>
+    </body>
+
+</html>
